@@ -1,0 +1,1423 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body{
+  font-family: Rubik;
+  color: #444;
+}
+
+a {
+  color: #4fa6d5;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #45beff;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6,
+.font-primary 
+{
+  font-family: "Raleway", sans-serif;  
+}
+
+.box-title h3 {
+  font-family: "Rubik", sans-serif !important;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 5px;
+  z-index: 99999;
+  background: #68A4C4;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #85b6cf;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+height: 80px;
+transition: all 0.5s;
+z-index: 997;
+transition: all 0.5s;
+background: #1e4356;
+}
+
+#header.header-transparent {
+background: none;
+}
+
+#header.header-scrolled {
+background: rgba(30, 67, 86, 0.8);
+height: 60px;
+}
+
+#header .logo h1 {
+font-size: 28px;
+margin: 0;
+padding: 4px 0;
+line-height: 1;
+font-weight: 400;
+letter-spacing: 3px;
+text-transform: uppercase;
+}
+
+#header .logo h1 a,
+#header .logo h1 a:hover {
+color: #fff;
+text-decoration: none;
+}
+
+#header .logo img {
+padding: 0;
+margin: 0;
+max-height: 40px;
+}
+
+.bi.bi-chevron-down {
+  margin-left: 5px;
+  margin-top : 5px; 
+  vertical-align: middle; 
+}
+
+/*--------------------------------------------------------------
+# Project Menu
+--------------------------------------------------------------*/
+
+
+
+section {
+  padding: 0px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  padding: 0px 0;
+  position: relative;
+}
+
+
+.section-title h2 {
+  font-family: 'Raleway';
+  font-size: 30px;
+  font-weight: 700;
+  opacity: 0.7;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #000000;
+  position: relative;
+  z-index: 2;
+}
+
+
+.section-title p {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+  color: #000000;
+}
+
+@media (max-width: 575px) {
+  .section-title h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .section-title span {
+    font-size: 38px;
+  }
+} 
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+#hero {
+height:100vh;
+width: 100%;
+
+}
+
+#hero .container {
+padding-top: 40px;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.div2 h1 {
+font-family: "Raleway", sans-serif !important;
+margin: 0 0 5px 0;
+text-align: center;
+font-size: 35px;
+font-weight: 700;
+line-height: 56px;
+color: #fff;
+}
+
+.div2 h2 {
+color: #fff;
+margin-bottom: 15px;
+font-size: 15px;
+text-align: center;
+}
+
+#hero .btn-get-started {
+font-family: "Jost", sans-serif;
+font-weight: 500;
+font-size: 15px;
+letter-spacing: 1px;
+display: inline-block;
+padding: 10px 28px 11px 28px;
+border-radius: 50px;
+transition: 0.5s;
+margin: 10px 0 0 0;
+color: #fff;
+background: #6c91be;
+align-items: center;
+margin-top: 20px; 
+}
+
+#hero .btn-get-started:hover {
+background: #1e4356;
+}
+
+
+#hero .animated {
+animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+#job-vacancy {
+margin-top : 30px;
+
+}
+
+.img-container {
+position: relative;
+top: 65px; /* You can adjust this value to move the image down */
+}
+.img-fluid {
+max-width: 150%;
+height: auto;
+margin-left: -80px;
+}
+
+@media (max-width: 768px) {
+#hero {
+  height: auto; /* Adjust height for better fit on small screens */
+  padding: 40px 0;
+}
+
+#hero .container {
+  padding-top: 0;
+}
+
+#hero h1 {
+  font-size: 24px; /* Adjust font size for better readability on small screens */
+  line-height: 36px;
+}
+
+#hero h2 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#hero .btn-get-started {
+  font-size: 14px;
+  padding: 8px 20px;
+  margin-top: 10px;
+}
+
+.img-container {
+  top: 0; /* Adjust this value to vertically center the image */
+}
+
+.img-fluid {
+  max-width: 100%;
+  margin-left: 0;
+}
+}
+
+@keyframes up-down {
+0% {
+  transform: translateY(10px);
+}
+
+100% {
+  transform: translateY(-10px);
+}
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+background: #0b212d;
+padding: 0 0 5px 0;
+color: #fff;
+font-size: 14px;
+}
+
+#footer .row {
+position : center;
+justify-content: center;
+align-items: center;
+margin-bottom: 0px;
+}
+
+#footer .footer-newsletter {
+padding: 50px 0;
+background: #0d2735;
+}
+
+#footer .footer-newsletter h4 {
+font-size: 24px;
+margin: 0 0 20px 0;
+padding: 0;
+line-height: 1;
+font-weight: 600;
+color: #a2cce3;
+}
+
+#footer .footer-newsletter form {
+margin-top: 30px;
+background: #fff;
+padding: 6px 10px;
+position: relative;
+border-radius: 50px;
+}
+
+#footer .footer-newsletter form input[type=email] {
+border: 0;
+padding: 4px;
+width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type=submit] {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+border: 0;
+background: none;
+font-size: 16px;
+padding: 0 20px;
+margin: 3px;
+background: #68A4C4;
+color: #fff;
+transition: 0.3s;
+border-radius: 50px;
+}
+
+#footer .footer-newsletter form input[type=submit]:hover {
+background: #468db3;
+}
+
+#footer .footer-top {
+background: #0d2735;
+border-top: 1px solid #17455e;
+border-bottom: 1px solid #123649;
+padding: 10px 0px 0px 0px;
+}
+
+#footer .footer-top .footer-info {
+margin-bottom: 0px;
+margin-left : 0px;
+margin-right : 0px;
+}
+
+#footer .footer-top .footer-info h3 {
+font-size: 18px;
+margin: 0 0 20px 0;
+padding: 2px 0 2px 0;
+line-height: 1;
+color: #a2cce3;
+font-weight: 600;
+}
+
+#footer .footer-top .footer-info p {
+font-size: 11px;
+line-height: 24px;
+margin-bottom: 0;
+font-family: "Open Sans", sans-serif;
+color: #fff;
+}
+
+#footer .footer-top .social-links a {
+font-size: 18px;
+display: inline-block;
+background: #1e4356;
+color: #fff;
+line-height: 1;
+padding: 8px 0;
+margin-right: 4px;
+margin-left: 30px;
+border-radius: 50%;
+text-align: center;
+width: 36px;
+height: 36px;
+transition: 0.3s;
+}
+
+#footer .footer-top .social-links a.facebook {
+font-size: 18px;
+display: inline-block;
+background: #1e4356;
+color: #fff;
+line-height: 1;
+padding: 8px 0;
+margin-right: 4px;
+margin-left: 10px;
+border-radius: 50%;
+text-align: center;
+width: 36px;
+height: 36px;
+transition: 0.3s;
+}
+
+#footer .footer-top .social-links.mt-3 {
+
+
+margin-right: 50px;
+margin-left: 80px;
+
+}
+
+
+#footer .footer-top .social-links a:hover {
+background: #68A4C4;
+color: #fff;
+text-decoration: none;
+}
+
+#footer .footer-top h4 {
+font-size: 14px;
+font-weight: 600;
+color: #a2cce3;
+position: relative;
+text-align: center;
+}
+
+#footer .footer-top .footer-links {
+margin-bottom: 0px;
+margin-left : auto;
+margin-right : auto;
+text-align: center;
+font-family: "Open Sans", sans-serif;
+font-size: 11px;
+
+}
+
+#footer .footer-top .footer-links ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+padding-right: 2px;
+color: #a2cce3;
+font-size: 18px;
+line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+padding: 10px 0;
+display: flex;
+align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+color: #fff;
+transition: 0.3s;
+display: inline-block;
+line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+color: #a2cce3;
+}
+
+#footer .footer-top .footer-contact {
+margin-bottom: -3px;
+margin-left : 0px;
+margin-right : 0px;
+font-family: "Open Sans", sans-serif;
+font-size: 11px;
+}
+
+#footer .footer-top .footer-contact p {
+line-height: 26px;
+text-align: center;
+
+}
+
+
+#footer .copyright {
+text-align: center;
+padding-top: 10px;
+font-family: "Open Sans", sans-serif;
+font-size: 11px;
+}
+
+#footer .credits {
+/* padding-top: 5px; */
+text-align: center;
+font-size: 13px;
+color: #fff;
+font-family: "Open Sans", sans-serif;
+font-size: 11px;
+}
+
+#footer .credits a {
+color: #a2cce3;
+}
+
+
+#footer .logo-container {
+display: flex;
+justify-content: center; /* Center content horizontally */
+align-items: center ; /* Center content vertically */
+margin-bottom: -50px; /* Adjust margin as needed */
+}
+
+#footer .image {
+  width: 70px; /* Adjust the width as needed */
+  height: 35px; /* Adjust the height as needed */
+ 
+}
+
+#footer .company-desc{
+
+text-align: justify;
+}
+
+#footer .contact-us{
+text-align: center;
+}
+
+
+/*--------------------------------------------------------------
+# Job Vacancy - Apply Now
+--------------------------------------------------------------*/
+
+/* Apply Now Section */
+#apply-now {
+padding: 0px 0;
+}
+
+.aapply-box h3 {
+font-size: 24px;
+margin-bottom: 20px;
+text-align: center;
+}
+
+/* Apply Form Styles */
+.php-email-form input[type="text"],
+.php-email-form input[type="email"],
+.php-email-form select,
+.php-email-form textarea {
+padding: 5px;
+border: 1px solid #ddd;
+width: 100%;
+margin-bottom: 5px;
+border-radius: 5px;
+transition: border-color 0.3s ease-in-out;
+}
+
+.php-email-form input[type="text"]:focus,
+.php-email-form input[type="email"]:focus,
+.php-email-form select:focus,
+.php-email-form textarea:focus {
+border-color: #007bff;
+}
+
+.php-email-form button[type="submit"] {
+background-color: #007bff;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+}
+
+.php-email-form button[type="submit"]:hover {
+background-color: #0056b3;
+}
+
+.table-apply-job{
+  display:block;
+
+}
+@media(min-width:769px)
+{
+  .table-apply-job-mobile{
+    display:none !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+/* Apply styles to the header */
+#header {
+  padding: 10px;
+}
+
+/* Adjust logo size in the header */
+.logo img {
+  max-width: 100px;
+}
+
+/* Adjust font size for navigation links */
+#navbar ul li a {
+  font-size: 14px;
+}
+
+/* Apply styles to the main content */
+#main {
+  padding: 10px;
+}
+
+/* Adjust font size for section titles */
+.section-title h2 {
+  font-size: 20px;
+}
+
+/* Adjust font size for form fields */
+.php-email-form input[type="text"],
+.php-email-form input[type="email"],
+.php-email-form textarea,
+.php-email-form button[type="submit"] {
+  font-size: 16px;
+  padding: 8px 16px;
+}
+.php-email-form button[type="submit"] {
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
+/* Adjust font size for footer content */
+#footer {
+  font-size: 14px;
+}
+
+
+.php-email-form select {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 14px;
+  margin-bottom: 5px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.table-apply-job{
+  display:none !important;
+}
+.table-apply-job-mobile{
+  display:block !important;
+}
+
+
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Internship Vacancy - Apply Now
+--------------------------------------------------------------*/
+
+
+/* Style for the internship application section */
+#apply-now-intern {
+background-color: #f4f4f4;
+padding: 30px 0;
+}
+
+/* Style for the section header */
+.section-header {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.section-title {
+font-size: 32px;
+font-weight: bold;
+
+}
+
+.section-title p {
+font-family: "Raleway", sans-serif;
+color: #000000;
+margin-bottom: 0;
+position: relative;
+z-index: 2;
+font-size: 15px;
+
+}
+
+
+
+.section-description  {
+font-size: 18px;
+color: #000000;
+max-width: 800px;
+margin: 0 auto;
+}
+
+
+/* Style for the application box */
+.aapply-box {
+backdrop-filter: blur(3px) saturate(180%);
+-webkit-backdrop-filter: blur(3px) saturate(180%);
+background-color: rgba(255, 255, 255, 0.58);
+border-radius: 15px;
+border: 1px solid rgba(209, 213, 219, 0.3);
+padding-top : 20px;
+padding-left : 30px;
+padding-right : 30px;
+padding-bottom : 10px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+margin-bottom: 30px;
+} 
+
+.aapply-box h3 {
+font-size: 24px;
+margin-bottom: 20px;
+text-align : center;
+}
+
+/* Style for form inputs and labels */
+label {
+font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-bottom: 0px;
+}
+
+textarea {
+resize: vertical;
+}
+
+/* Style for submit button */
+input[type="submit"] {
+display: inline-block;
+padding: 10px 20px;
+background-color: #7ba5d2;
+color: #fff;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+background-color: #89afd8;
+}
+
+
+.applyy{
+width:100%;
+}
+
+
+
+/* CSS */
+.button-4 {
+appearance: none;
+background-color: #FAFBFC;
+border: 1px solid rgba(27, 31, 35, 0.15);
+border-radius: 6px;
+box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+box-sizing: border-box;
+color: #24292E;
+cursor: pointer;
+display: inline-block;
+font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+list-style: none;
+padding: 6px 16px;
+position: relative;
+transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+vertical-align: middle;
+white-space: nowrap;
+word-wrap: break-word;
+
+}
+
+.button-4:hover {
+background-color: #F3F4F6;
+text-decoration: none;
+transition-duration: 0.1s;
+}
+
+.button-4:disabled {
+background-color: #FAFBFC;
+border-color: rgba(27, 31, 35, 0.15);
+color: #959DA5;
+cursor: default;
+}
+
+.button-4:active {
+background-color: #EDEFF2;
+box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+transition: none 0s;
+}
+
+.button-4:focus {
+outline: 1px transparent;
+}
+
+.button-4:before {
+display: none;
+}
+
+.button-4:-webkit-details-marker {
+display: none;
+}
+
+.joblist{
+position: relative;
+width:60%;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.84);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+font-family: "Poppins", sans-serif;
+
+margin-bottom:40px;
+}
+
+.jobbb{
+background: transparent;
+}
+.nav-button {
+background: transparent;
+border: none;
+font-size: 24px;
+cursor: pointer;
+position: absolute;
+top: 50%;
+}
+
+#prevButton {
+left: 10px;
+z-index: 2;
+}
+
+#nextButton {
+right: 10px;
+z-index: 4;
+}
+
+
+.skills-buttons label {
+display: inline-block;
+background-color: #f2f2f2;
+border: 1px solid #ccc;
+padding: 5px 10px;
+margin: 2px 5px;
+cursor: pointer;
+border-radius: 4px;
+}
+
+.skills-buttons input[type="checkbox"] {
+display: none;
+}
+
+.skills-buttons input[type="checkbox"]:checked + label {
+background-color: #3498db;
+color: white;
+border-color: #3498db;
+}
+
+
+/* Style for file input */
+input[type="file"] {
+display: block;
+margin-top: 5px;
+}
+
+/* Style for file input label */
+label[for="Resume"] {
+display: block;
+font-weight: bold;
+margin-top: 10px;
+}
+
+.form-intern-apply{
+display:block ;
+}
+
+.form-intern-apply-mobile{
+display:none ;
+}
+
+
+@media (max-width: 768px) {
+/* Adjustments for iPhone SE dimensions */
+
+/* Style for the application box */
+.aapply-box {
+  padding: 20px;
+}
+
+/* Style for form inputs and labels */
+input[type="text"],
+textarea {
+  padding: 8px;
+}
+
+/* Style for submit button */
+input[type="submit"] {
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
+
+/* Apply Form Styles */
+.php-email-form input[type="text"],
+.php-email-form input[type="email"],
+.php-email-form select,
+.php-email-form textarea {
+padding: 5px;
+border: 1px solid #ddd;
+width: 100%;
+margin-bottom: 5px;
+border-radius: 5px;
+transition: border-color 0.3s ease-in-out;
+}
+
+.php-email-form input[type="text"]:focus,
+.php-email-form input[type="email"]:focus,
+.php-email-form select:focus,
+.php-email-form textarea:focus {
+border-color: #007bff;
+}
+
+.php-email-form button[type="submit"] {
+background-color: #007bff;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+}
+
+.php-email-form button[type="submit"]:hover {
+background-color: #0056b3;
+}
+
+
+/* Adjust font sizes and spacing for smaller screens */
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 16px;
+}
+
+label {
+  font-weight: normal;
+}
+
+/* Adjust margin for form elements */
+input[type="text"],
+textarea {
+  margin-bottom: 10px;
+}
+
+/* Adjust button styles */
+.button-4 {
+  font-size: 12px;
+  padding: 6px 12px;
+}
+
+/* Adjust footer layout */
+.footer-info,
+.footer-links,
+.footer-contact {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-intern-apply{
+  display:none !important ;
+}
+
+.form-intern-apply-mobile{
+  display:block !important ;
+}
+
+}
+
+
+.frame{
+  width:100%;
+  display:flex;
+  flex-direction:row;
+}
+
+.div1{
+  width:35%;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.div2{
+  width:65%;
+  height:100%;
+}
+
+
+.div1 h2{
+  color:white;
+}
+
+.whyus{
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+  background: linear-gradient(-45deg, #1391a5, #1e4356);
+  color: #fff;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:100%;
+  margin:auto;
+  justify-content: space-around;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  height:100%;
+}
+
+
+
+
+.card {
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+  width:50%;
+  color: #fff;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border:none;
+  box-shadow: none;
+  padding: 30px;
+
+}
+
+
+.card1{
+  background-color: #224a5e;
+}
+
+.card2{
+  background-color: #204f66;
+}
+
+
+.card3{
+  background-color: #1d3947;
+}
+
+.card4{
+  background-color: #1e4356;
+}
+
+
+
+
+.card img{
+  width:80px;
+}
+
+.card:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card > .image {
+  width: 70px;
+  height: 70px;
+  transition: all 0.1s ease-in-out;
+}
+
+
+
+.card > .h1title {
+  font-size: 16px !important;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card > .pdesc {
+  color: white;
+  font-size: 11px !important;
+  text-align: center;
+}
+
+
+.whydesc{
+  padding-left:20px;
+}
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar>ul>li {
+  white-space: nowrap;
+  padding: 10px 0 10px 12px;
+}
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 10px;
+  font-family:Rubik;
+  font-size: 15px;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a:before,
+.nav a:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.2s ease transform;
+}
+
+nav a:before {
+  top: 0;
+  left: 10px;
+  width: 6px;
+  height: 6px;
+}
+
+nav a:after {
+  top: 5px;
+  left: 18px;
+  width: 4px;
+  height: 4px;
+}
+
+nav a:nth-child(1):before {
+  background-color: yellow;
+}
+
+nav a:nth-child(1):after {
+  background-color: red;
+}
+
+nav a:nth-child(2):before {
+  background-color: #00e2ff;
+}
+
+nav a:nth-child(2):after {
+  background-color: #89ff00;
+}
+
+nav a:nth-child(3):before {
+  background-color: purple;
+}
+
+nav a:nth-child(3):after {
+  background-color: palevioletred;
+}
+
+#indicator {
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.2s ease left;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+nav a:hover:before,
+nav a:hover:after {
+  transform: scale(1);
+}
+
+nav a:nth-child(1):hover ~ #indicator {
+  background: linear-gradient(130deg, yellow, red);
+}
+
+nav a:nth-child(2):hover ~ #indicator {
+  left: 34%;
+  background: linear-gradient(130deg, #00e2ff, #89ff00);
+}
+
+nav a:nth-child(3):hover ~ #indicator {
+  left: 70%;
+  background: linear-gradient(130deg, purple, palevioletred);
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #fff;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  color: #060c22;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+  color: #f82249;
+}
+
+.navbar .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar .dropdown .dropdown:hover>ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+.mobile-nav-toggle.bi-x {
+  color: #cc1616;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #191919;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+  color: #cc1616;
+  background: none;
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover>a {
+  color: #cc1616;
+}
+
+.navbar-mobile .dropdown>.dropdown-active {
+  display: block;
+}
+
