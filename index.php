@@ -67,7 +67,7 @@
                 <li><a href="">Octa FX</a></li>
               </ul>
             </li>
-            <li><a class="nav-link scrollto " href="#aboutheader">Welcome IB</a></li>
+            <li><a class="nav-link scrollto " href="welcomeIB.php">Welcome IB</a></li>
             <li><a class="nav-link scrollto " href="#aboutheader">Contact</a></li>
           </ul>
           <div id="indicator"></div>
@@ -400,6 +400,48 @@
      </div>
    </div>
  </section>
+
+   <!-- ======= Join Kami ======= -->
+   <section>
+
+<div class="row justify-content-center text-center mb-5 mt-3">
+    <div class="col-md-5" data-aos="fade-up">
+        <h2 class="section-heading">Komuniti Team EATT</h2>
+
+        <p style="color:black"> Untuk langkah selanjutnya, anda perlu menghubungi Admin Team EATT dan memberikan <b>nombor akaun trading</b> anda</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+        <a href="https://t.me/xmrebatemalaysia" target="_blank" class="contact-link">
+            <div class="contact-detail">
+            <h5>Group Rebate XM Malaysia</h5>
+            </div>
+        </a>
+        </div>
+        <div class="col-md-4">
+        <a href="https://t.me/TeamEATT" target="_blank" class="contact-link">
+            <div class="contact-detail">
+            <h5>Admin EATT</h5>
+           
+            </div>
+        </a>
+        </div>
+        <div class="col-md-4">
+        <a href="https://t.me/EATTChannelv2" target="_blank" class="contact-link" target="_blank">
+            <div class="contact-detail">
+            <h5>Channel Team EATT Malaysia</h5>
+          
+            </div>
+        </a>
+        </div>
+    </div>
+</div>
+
+            
+</section>
 
  
   </main>
