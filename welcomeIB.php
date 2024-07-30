@@ -91,8 +91,8 @@
               <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500"><a href="#" class="btn btn-outline-white">Register Sekarang!</a></p>
             </div>
             <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img-container" data-aos="zoom-in" data-aos-delay="150">
-          <img src="assets/img/IB/hero.png" class="img-fluid animated hero-img" alt="">
-        </div>
+              <img src="assets/img/IB/hero.png" class="animated hero-img" alt="">
+            </div>
         </div>
       </div>
     </div>

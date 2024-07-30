@@ -886,8 +886,8 @@ section {
 }
 
 /*--------------------------------------------------------------
-  # Hero Section
-  --------------------------------------------------------------*/
+# Hero Section
+--------------------------------------------------------------*/
 .hero-section {
     background: linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, rgba(61, 179, 197, 0.8) 100%), url(../img/hero-bg.jpg);
     position: relative;
@@ -987,6 +987,10 @@ section {
         top: 0;
         max-width: 100%;
     }
+    .hero-img-container
+    {
+        display: none;
+    }
 }
 
 .hero-section .iphone-wrap .phone-2,
@@ -1013,8 +1017,8 @@ section {
         margin-top: 0px;
         margin-left: 100px;
     }
+    
 }
-
 
 /*--------------------------------------------------------------
 # Footer

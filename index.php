@@ -74,7 +74,7 @@
           <div id="indicator"></div>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
-        
+
       </div>
     </header><!-- End Header -->
 
@@ -554,24 +554,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
   <script src="assets/js/icampus.js"></script>
 
-  <!-- Script for counting number -->
-  <script>
-    function animateValue(obj, start, end, duration) {
-      let startTimestamp = null;
-      const step = (timestamp) => {
-        if (!startTimestamp) startTimestamp = timestamp;
-        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-        obj.innerHTML = Math.floor(progress * (end - start) + start);
-        if (progress < 1) {
-          window.requestAnimationFrame(step);
-        }
-      };
-      window.requestAnimationFrame(step);
-    }
-
+  <script>          
     const valueElements = document.querySelectorAll(".value");
 
     function animateOnce(element, targetValue) {
