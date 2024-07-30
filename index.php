@@ -70,10 +70,11 @@
             <li><a class="nav-link scrollto " href="welcomeIB.php">Welcome IB</a></li>
             <li><a class="nav-link scrollto " href="#aboutheader">Contact</a></li>
           </ul>
+
           <div id="indicator"></div>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
-
+        
       </div>
     </header><!-- End Header -->
 

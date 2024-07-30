@@ -60,7 +60,6 @@
           <div id="indicator"></div>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
-
       </div>
     </header>
   <!-- End Header -->
