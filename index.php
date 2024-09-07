@@ -62,9 +62,6 @@
               <ul>
                 <li><a href="rebate.php">Rebate</a></li>
                 <li><a href="">XM</a></li>
-                <li><a href="">Forex4You</a></li>
-                <li><a href="">FBS</a></li>
-                <li><a href="">Octa FX</a></li>
               </ul>
             </li>
             <li><a class="nav-link scrollto " href="welcomeIB.php">Welcome IB</a></li>
@@ -88,7 +85,7 @@
     <div class="container-fluid" data-aos="fade-up">
       <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1>Selamat Datang ke Team EATT Rebate XM</h1>
+          <h1>Welcome Trader !!</h1>
           <h1 style="color: #ec1453;">
             <a href="" class="typewrite" style="color: #ec1453;" data-period="2000"
               data-type='[ "Jadi IB?", "Mahu Rebate XM?", "Dapat Bonus Walaupun Loss?" ]'>
@@ -96,9 +93,11 @@
             </a>
           </h1>
           <h2>
-          ​XM Global Limited Menawarkan Para Pelanggan Baru Modal Berdagang Sebanyak 50 USD Sekiranya Anda Pertama Kali Mendaftar Dengan XM
+          ​XM Global Limited Menawarkan Para Pelanggan Baru 
+          <br>Modal Berdagang Sebanyak 50 USD 
+          <br>Sekiranya Anda Pertama Kali Mendaftar Dengan XM
           <br>​Anda Boleh Terus Berdagang Di MT4/MT5!​
-          <br>Anda Layak Claim RM 50 Jika Anda Mendaftar Menggunakan Link Dibawah Ini Sahaja
+          
           </h2>
           <div><button id="get-started-button" class="btn-get-started scrollto">Register Now</button></div>
         </div>
@@ -107,6 +106,21 @@
         </div>
       </div>
     </div>
+
+    <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <span class="close-btn" onclick="closeLightbox()">&times;</span>
+      <h2 class="pengumuman">Pengumuman Penting Team EA TT ‼️</h2>
+      <p class="tulisan">Setiap Account Rebate wajib di maklumkan kepada ADMIN.<br>
+         Setelah Anda Daftar, Anda akan menerima email pengesahan rebate daripada XM.<br><br>
+         Jika anda berminat untuk menjadi IB Under Team EA TT untuk menikmati 90% dan GOLD 11$ Per lot, sila PM ADMIN.
+      </p>
+      <button class="telegram-btn" onclick="redirectToTelegram()">Join Telegram Channel</button>
+    </div>
+  </div>
+
+
+
   </section>
 
   <!-- ======= End Hero Section ======= -->
@@ -132,8 +146,8 @@
       <!-- ======= Bonus XM ======= -->
       <section id="services" class="services" style="background:#fff;">
         <div class="section-title">
-          <span>Bonus XM</span>
-          <h2>Bonus XM</h2>
+          <span>Cara Daftar Akaun</span>
+          <h2>Cara Daftar Akaun</h2>
 
           <p style="color:black"> Dapatkan Bonus XM Eksklusif! Daftar sekarang dengan XM Global Limited dan nikmati bonus perdagangan sehingga 50 USD.</p>
         </div>
@@ -418,7 +432,7 @@
         <div class="col-md-4">
         <a href="https://t.me/xmrebatemalaysia" target="_blank" class="contact-link">
             <div class="contact-detail">
-            <h5>Group Rebate XM Malaysia</h5>
+            <h5>Group Rebate XM</h5>
             </div>
         </a>
         </div>
@@ -556,7 +570,18 @@
   <!-- Template Main JS File -->
   <script src="assets/js/icampus.js"></script>
 
-  <script>          
+
+  <script>
+        // Function to open a new pop-up window
+        function openPopup() {
+            window.open('popup.html', 'PopupWindow', 'width=400,height=400,scrollbars=no,resizable=no');
+        }
+
+        // Automatically open the pop-up when the page loads
+        window.onload = openPopup;
+  </script>
+  
+  <script>     
     const valueElements = document.querySelectorAll(".value");
 
     function animateOnce(element, targetValue) {
@@ -790,8 +815,6 @@
       $('.portfolio-mobile').slick('slickNext');
     });
   </script>
-</body>
-
 
 <script>
   window.addEventListener("scroll", () => {
@@ -831,5 +854,20 @@
     });
   });
 </script>
+  
+<script>
+// Function to close the lightbox
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+
+// Function to redirect to the Telegram channel
+function redirectToTelegram() {
+  window.location.href = 'https://t.me/TeamEATT'; // Replace with your actual Telegram link
+}
+</script>
+</body>
+
+
 
 </html>

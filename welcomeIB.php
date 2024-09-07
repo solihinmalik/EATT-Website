@@ -49,9 +49,6 @@
               <ul>
                 <li><a href="rebate.php">Rebate</a></li>
                 <li><a href="">XM</a></li>
-                <li><a href="">Forex4You</a></li>
-                <li><a href="">FBS</a></li>
-                <li><a href="">Octa FX</a></li>
               </ul>
             </li>
             <li><a class="nav-link scrollto " href="welcomeIB.php">Welcome IB</a></li>
@@ -307,7 +304,7 @@
                     <span>
                         <i class="fas fa-envelope contact-icon"></i>
                     </span>
-                    <h5>Group Rebate XM Malaysia</h5>
+                    <h5>Group Rebate XM</h5>
                     </div>
                 </a>
                 </div>

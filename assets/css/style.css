@@ -1,3 +1,71 @@
+/* Lightbox style */
+.lightbox {
+  display: block; /* Display the lightbox by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  z-index: 1000;
+
+    /* Flexbox centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+  position: relative; /* Necessary for positioning the close button inside the box */
+  background-color: white;
+  padding: 20px;
+  width: 500px; /* Adjust width if needed */
+  max-width: 90%; /* Ensure responsiveness */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  border-radius: 10px;
+}
+
+.pengumuman {
+  font-size: 22px !important; /* Increase header size */
+  margin-bottom: 10px;
+  text-align: center; /* Center the title */
+  font-weight: bold !important; 
+  color: red !important;
+}
+
+.tulisan {
+  font-size: 16px; /* Increase paragraph font size */
+  line-height: 1.5; /* Adjust line height for readability */
+  color: #333; /* Ensure clear text color */
+  text-align: justify;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.telegram-btn {
+  display: inline-block; /* Make sure it's treated like a button */
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0088cc; /* Telegram blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center; /* Center text inside the button */
+  text-decoration: none; /* Remove underline from anchor (if it's an anchor element) */
+}
+
+.telegram-btn:hover {
+  background-color: #006699;
+}
 
 .contact-detail {
   padding: 20px;
